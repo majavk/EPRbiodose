@@ -1,5 +1,5 @@
 # EPRbiodose
-Dose reconstruction algorithm using soda-lime glass and EPR spectroscopy in a case of radiological and/or nuclear accidents.
+Dose reconstruction algorithm using soda-lime glass and ESR spectroscopy in a case of radiological and/or nuclear accidents.
 
 
 The electron spin resonance (ESR) method is widely used in the field of chemistry, physics,
@@ -10,25 +10,23 @@ following catastrophic, large-scale radiological events. The ESR technique have 
 to a wide range of radiological studies, including nuclear bomb detonation (e.g., Hiroshima and
 Nagasaki), nuclear power plant accidents (e.g., Chernobyl), radioactive pollution (e.g., Mayak
 plutonium facility), and in the future could include terrorist events involving the dispersal of
-radioactive materials. For retrospective dosimetry, immediate action to evaluate dose to
-individuals following radiation exposure is required to assess deterministic biological effects
-and to enable rapid medical triage. The triage dose levels are differently defined in the literature
-and for purpose of this study triage levels defined in MULTIBIODOSE project have been used.
-Low triage dose level is less than 1 Gy when it is unlikely to develop symptoms of acute
-radiation syndrome (ARS) and no immediate care is required. The medium level implies doses
-1-2 Gy when victim may experience mild or delayed ARS symptoms and follow-up care may
-be necessary and high for the doses higher than 2 Gy when moderate to urgent care may be
-required.
-The retrospective dosimetry measurement techniques aim to perform direct dose evaluations
-for individuals who, as members of the public, are most unlikely to be carrying a dosimeter for
-radiation monitoring purposes in the event of a radiation incident. Hence attention has focused
-on biological or physical materials they may have in their possession that could be used as
-surrogate dosimeters. For ESR measurements this includes material within the body (such as
-bone or tooth enamel) requiring invasive procedures, a materials collected non-invasively (such
-as clippings taken from finger- or toenails) and artefacts within their personal belongings (such
-as clothing, fabrics, plastics, glass, sugar, touch screens of mobile phones). The use of electron
-spin resonance (ESR) on detection of ionizing radiation-induced radicals in different types of
-glasses is a well-established technique in radiation dosimetry.
-Nowadays, the float glass is the most widely used form of glass and makes more up to other
-types 96% of output. Float soda lime silicate glass is used principally in building and automotive
-industries. It is used in various application such as in car glass, windows, doors, sun roofs, copy 
+radioactive materials. 
+
+Most commonly the dose in the accidents is assessed by using the peak-to-peak amplitude
+from the 1st derivation of the ESR spectra, but in the lower dose range, necessary for the triage of the 
+victims of the accidents, the peak-topeak amplitude is not giving the good dose assessment.
+
+In this project the calibration curve to assess the dose from the soda-lime glass samples from the position 
+of maximum of ESR spectra (the magnetic field) and it's shift with the dose
+was established and the blind dose was assessed based on the calibration curve.
+
+The EPR spectra of irradiated soda-lime samples in the lower dose range is composed of background spectra,
+spectra of non-irradiated sample and the radiation induced spectra.
+
+The EPR psectra for the lower doses in the position of maximum is mixture of the 2 contributions,
+the radiaton induced and background spectra, and the position of maximum is shifting with the dose.
+According to the model, the background component contribution is exponenatially decreasing with the dose
+in the EPR signal and the radiation induced component contribution is exponentially increasing.
+
+This algorithm is making calibration curve, the relationship between the position of the maximum of the EPR spectra
+and the dose.

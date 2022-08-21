@@ -30,3 +30,4 @@ in the EPR signal and the radiation induced component contribution is exponentia
 
 This algorithm is making calibration curve, the relationship between the position of the maximum of the EPR spectra
 and the dose.
+This research is published under: https://doi.org/10.1093/rpd/ncy290, https://doi.org/10.1080/10420150.2018.1513003
